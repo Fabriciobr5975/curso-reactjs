@@ -38,7 +38,11 @@ a, a:visited, a:link {
       margin-bottom: 30px;
     }
 
-    input, select {
+    input[type="checkbox"], input[type="radio"]  {
+      min-width: auto;
+    }
+
+    input, select, textarea {
       padding: 10px;
       border: 3px solid #e7e7e7;
       border-width: 2px;
