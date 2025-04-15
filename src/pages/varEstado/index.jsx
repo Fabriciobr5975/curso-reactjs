@@ -1,6 +1,8 @@
 import "./index.scss";
 import { useState } from "react";
 
+import Cabecalho from "../../components/cabecalho";
+
 import {
   tratarNumeroComVirgula,
   imprimirNumeroComVirgula,
@@ -93,9 +95,7 @@ export default function VarEstado() {
 
   return (
     <div className="pagina-varestado pagina">
-      <header className="cabecalho">
-        <h1>ReactJs | Variável de Estado</h1>
-      </header>
+      <Cabecalho titulo="ReactJS | Variável de Estado"/>
 
       <div className="secao planos">
         <h1>Meus Planos atuais</h1>

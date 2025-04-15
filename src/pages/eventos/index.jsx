@@ -1,5 +1,7 @@
 import "./index.scss";
 
+import Cabecalho from "../../components/cabecalho";
+
 export default function Eventos() {
   const clicou = () => alert("Oie, o usuário acaba de clicar!");
   const movimentouMouse = () =>
@@ -23,9 +25,7 @@ export default function Eventos() {
 
   return (
     <div className="pagina-eventos pagina">
-      <header className="cabecalho">
-        <h1> ReactJS | Eventos </h1>
-      </header>
+      <Cabecalho titulo="ReactJS | Eventos"/>
 
       <section className="secao">
         <h1>Entendendo eventos</h1>
