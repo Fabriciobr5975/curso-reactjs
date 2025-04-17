@@ -6,8 +6,7 @@ import { Link } from "react-router-dom";
 export default function App() {
   return (
     <div className="pagina-app pagina">
-      
-      <Cabecalho titulo="Estudando ReactJS !!!"/>
+      <Cabecalho titulo="Estudando ReactJS !!!" />
 
       <section className="secao">
         <h1>Temas</h1>
@@ -29,6 +28,10 @@ export default function App() {
 
           <li>
             <Link to="/varestado">Ir para Variável de Estado</Link>
+          </li>
+
+          <li>
+            <Link to="/componentes">Ir para os Componentes</Link>
           </li>
         </ul>
       </section>
