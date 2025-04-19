@@ -8,4 +8,37 @@
       list-style: none;
     }
   }
+
+  .planos {
+    .entrada {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+    }
+
+    .lista {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+  }
+
+  .filmes {
+    
+    .lista {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    
+    .entradas {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+    }
+  }
 }

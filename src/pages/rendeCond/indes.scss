@@ -1,0 +1,30 @@
+.pagina-rende-cond {
+  
+    .msg-biscoito {
+        font: 600 28px 'Poppins';
+        text-align: center;
+        margin: 20px;
+        font-style: italic;
+    }
+
+    .filmes {
+    
+    .lista {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    
+    .entradas {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+    }
+
+    label {
+        padding-left: 10px;
+    }
+  }
+}

@@ -33,6 +33,10 @@ export default function App() {
           <li>
             <Link to="/componentes">Ir para os Componentes</Link>
           </li>
+
+          <li>
+            <Link to="/rendecond">Ir para a Renderização Condicional</Link>
+          </li>
         </ul>
       </section>
     </div>
