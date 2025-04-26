@@ -41,6 +41,10 @@ export default function App() {
           <li>
             <Link to="/efeitos">Ir para Efeitos</Link>
           </li>
+
+          <li>
+            <Link to="/chamadaapi">Ir para Chamada de API</Link>
+          </li>
         </ul>
       </section>
     </div>
