@@ -93,9 +93,26 @@ export default function VarEstado() {
     setCor("");
   };
 
+  const removerPlano = (posicao) => {
+    listaPlanos.splice(posicao, 1);
+    setListaPlanos([...listaPlanos]);
+  };
+
+  const alterarPlano = (posicao) => {
+    const planoAlteracao = {
+      titulo: plano,
+      tempo: situacao,
+      tema: cor,
+    };
+
+    listaPlanos[posicao] = planoAlteracao;
+
+    setListaPlanos([...listaPlanos]);
+  };
+
   return (
     <div className="pagina-varestado pagina">
-      <Cabecalho titulo="ReactJS | Variável de Estado"/>
+      <Cabecalho titulo="ReactJS | Variável de Estado" />
 
       <div className="secao planos">
         <h1>Meus Planos atuais</h1>
@@ -123,15 +140,28 @@ export default function VarEstado() {
         </div>
 
         <div className="lista">
-          {listaPlanos.map((item, posicao) => 
-              <div className="plano" key={posicao}>
-                <div className="cor" style={{ backgroundColor: item.tema }}>&nbsp;</div>
-                <div>
-                  <h1>{item.titulo}</h1>
-                  <h2>{item.tempo}</h2>
-                </div>
+          {listaPlanos.map((item, posicao) => (
+            <div className="plano" key={posicao}>
+              <div className="cor" style={{ backgroundColor: item.tema }}>
+                &nbsp;
               </div>
-          )}
+              <div>
+                <h1>{item.titulo}</h1>
+                <h2>{item.tempo}</h2>
+              </div>
+              <div className="manipulacao-objeto">
+                <i
+                  className="fa fa-pen-to-square"
+                  onClick={() => alterarPlano(posicao)}
+                ></i>
+                &nbsp;
+                <i
+                  className="fa fa-trash-can"
+                  onClick={() => removerPlano(posicao)}
+                ></i>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
